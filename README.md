@@ -24,7 +24,7 @@ Este projeto simula um sistema de carrinho de compras onde é possível:
 - Node.js
 
 ## 📁 Estrutura
-![Foto do projeto](../sc/sc.png)
+![Foto do projeto](./sc/sc.png)
 
 
 
