@@ -19,5 +19,6 @@ await cartService.addItem(cart, item3);
 
 await cartService.deleteItem(cart, item2.name);
 
-console.log("Total do carrinho:");
+//cartService.displayCart(cart);
+
 await cartService.calculateTotal(cart);

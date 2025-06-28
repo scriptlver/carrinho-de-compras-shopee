@@ -13,9 +13,18 @@ async function removeItem (userCart, index){ //funcao para diminuir um item do c
 
 }
 
+async function displayCart(userCart) {
+    console.log("\nCarrinho:");
+    userCart.forEach((item, index) => {
+        console.log(`${index + 1}. ${item.name} - R$${item.price} | ${item.quantity}x | Subtotal: R${item.subtotal()}`);
+    });
+}
+
+
 async function calculateTotal(userCart){ //funcao para calcular o total do carrinho
+   console.log("Total do carrinho:");
    const result = userCart.reduce((total, item) => total + item.subtotal(), 0);
-   console.log(result);
+   console.log(`\nTotal: ${result}`);
 }
 
 export {
