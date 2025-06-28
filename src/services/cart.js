@@ -10,7 +10,10 @@ async function deleteItem(userCart, name){ //funcao para delte um item do carrin
 }  
 
 async function removeItem (userCart, index){ //funcao para diminuir um item do carrinho 
-
+    const deleteIndex = index - 1;
+    if(index >= 0 && index< userCart.length){
+        userCart.splice(deleteIndex, 1);  //ja q começa em 0 arrumei aq pra aparecer na formatação certa
+    }      
 }
 
 async function displayCart(userCart) {
