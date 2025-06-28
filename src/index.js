@@ -1,1 +1,1 @@
-console.log("siii")
+const cart = []
